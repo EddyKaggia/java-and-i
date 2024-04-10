@@ -2,6 +2,15 @@ public class Account {
     private double balance;
     private int number;
 
+    public Account(int number, double balance) {
+        this.number = number;
+        this.balance = balance;
+    }
+
+    public void setNumber(String number) {
+        this.number = Integer.parseInt(number);
+    }
+
     public void setNumber(int number) {
         this.number = number;
     }
