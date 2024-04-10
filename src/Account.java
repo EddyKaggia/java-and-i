@@ -1,6 +1,18 @@
 public class Account {
-    double balance;
-    int number;
+    private double balance;
+    private int number;
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
 
     void deposit(double amount) {
         balance += amount;
