@@ -1,7 +1,7 @@
 public class BankApp {
     public static void main(String args[]) {
-        Account account1 = new Account(123, 0);
-        Account account2 = new Account(321, 1000);
+        Account account1 = new Account(123, 0, new Agency("Zakes"));
+        Account account2 = new Account(321, 1000, new Agency("Simmy"));
 
         account1.setNumber("124");
         account1.deposit(10);

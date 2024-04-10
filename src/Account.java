@@ -1,10 +1,16 @@
 public class Account {
+    private Agency agency;
     private double balance;
     private int number;
 
-    public Account(int number, double balance) {
+    public Account(int number, double balance, Agency a) {
         this.number = number;
         this.balance = balance;
+        agency = a;
+    }
+
+    public Agency getAgency() {
+        return agency;
     }
 
     public void setNumber(String number) {
